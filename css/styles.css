@@ -269,9 +269,27 @@ a.yellow-link-lower-right {
 	padding: 50px 10px 0px 50px;
 }
 
-#schedule_page ul {
+#schedule_page ul , #sponsor_page ul, #speaker_page ul{
 	list-style-type: none;
 }
+
+#sponsor_page, #speaker_page {
+	width: 85%;
+}
+
+#sponsor_page li, #speaker_page li {
+	clear: both;
+}
+
+#sponsor_page p, #speaker_page p {
+	padding-top: 10px;
+	vertical-align: middle;
+}
+
+ #sponsor_page img, #speaker_page img {
+	float: left;
+	padding: 10px;
+ }
 
 /* -------------------------------------- */
 /* responsive styles for desktop displays */
