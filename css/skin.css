@@ -43,13 +43,6 @@
 	padding-left: 150px;
 }
 
-@media only screen and (max-width: 420px) {
-	.jcarousel-skin-speaker, .jcarousel-list-horizontal {
-	width: 300px !important;
-	padding-left: 150px;
-	}
-}
-
 .jcarousel-skin-tango .jcarousel-item, .jcarousel-skin-sponsor .jcarousel-item{
     width: 245px;
     height: 175px;
@@ -132,6 +125,13 @@
     left: auto;
     right: 5px;
     background-image: url(../img/next-horizontal.png);
+}
+
+@media only screen and (max-width: 420px) {
+	.jcarousel-skin-speaker, .jcarousel-list-horizontal {
+	width: 260px !important;
+	padding-left: 40px;
+	}
 }
 
 

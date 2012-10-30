@@ -175,6 +175,11 @@ a.yellow-link-lower-right {
 	float: left;
 }
 
+#sponsor_carousel p {
+	font-size: .8em;
+	width: 200px;
+}
+
 /* floats and clears and padding applicable to all display sizes */
 #description {
 	clear: both;
