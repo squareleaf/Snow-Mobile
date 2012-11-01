@@ -297,23 +297,45 @@ a.yellow-link-lower-right {
 	float: none;
  }
  
- .speaker_photo {
+ .speaker_photo, .sponsor_logo{
 	float: left;
 	padding-left: 20px;
+	/* max-width: 15%; */
  }
  
- .speaker_bio {
+ .sponsor_logo {
+	width: 40%;
+ }
+ 
+ .speaker_bio  {
  	float: left;
 	padding-left: 5px;
-	width: 55%;
+	/* width: 55%; */
  }
  
- .speaker_info {
+ .sponsor_bio {
 	float: left;
-    width: 20%;
+	padding-left: 10px;
+	/* width: 65%; */
+ }
+ 
+ .speaker_info  {
+	float: left;
+    /* width: 20%; */
     padding: 20px;
-	margin-bottom: 15px;
+	margin: 5px 0 15px 20px;
     font-size: 13px;
+	background-color: #58585a;
+	clear: both;
+	width: 80%;
+ }
+ 
+ .sponsor_info {
+	float: left;
+    /* width: 20%; */
+    padding: 20px;
+	margin: 0 15px 15px 15px;
+    font-size: 14px;
 	background-color: #58585a;
  }
  
@@ -434,5 +456,25 @@ a.yellow-link-lower-right {
 
 	.lodging_details {
 		width: 25%;
+	}
+	
+	.sponsor_info, .speaker_info {
+		width: 20%;
+	}
+	
+	.speaker_info {
+		clear: none;
+	}
+	
+	.sponsor_bio {
+		width: 65%;
+	}
+	
+	.speaker_bio {
+		width: 50%;
+	}
+	
+	.speaker_photo, .sponsor_logo {
+		width: 15%;
 	}
 }
