@@ -65,6 +65,7 @@ img {
 p {
 	margin-top: 0; 
 	padding-top: 0;
+	font-size: 1.1em;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li {
@@ -118,13 +119,13 @@ a.yellow-link-lower-right {
 /* header styles */
 #logo {
 	max-width: 45%;
-	float: left;
 	padding: 15px;
+	margin: 0 auto;
 }
 
 #eventdates {
-	float: left;
 	padding-top: 20px;
+	text-align: center;
 }
 
 /* nav styles */
@@ -235,11 +236,12 @@ a.yellow-link-lower-right {
 	clear:both;
 	text-align: center;
 	background: url(../img/snowdrift_front.png) no-repeat bottom left, url(../img/snowdrift_middle.png) no-repeat bottom right, url(../img/snowdrift_back.png) no-repeat bottom right;
-	height: 250px;
+	height: 275px;
 }
 
 #snowdrifts a, #snowdrifts p {
 	color: #c7eafc;
+	font-size: 1em;
 }
 
 /* -------------------------------------- */
@@ -325,10 +327,13 @@ a.yellow-link-lower-right {
 
 	#logo {
 		width: 50%;
+		float: left;
 	}
 	
 	#eventdates {
 		padding: 50px 5px 0 40px;
+		float: left;
+		text-align: left;
 	}
 	
 	section  {
@@ -373,6 +378,10 @@ a.yellow-link-lower-right {
 	
 	#afterparty{
 		padding-right: 30px;
+	}
+	
+	#snowdrifts {
+		height: 250px;
 	}
 	
 	/* change how font displays on desktop displays */
