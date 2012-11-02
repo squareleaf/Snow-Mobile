@@ -17,9 +17,16 @@
 <link rel="stylesheet" type="text/css" href="css/skin.css" />
 <script type="text/javascript">
 jQuery(document).ready(function() {
-    jQuery('#schedule_carousel').jcarousel();
-	jQuery('#speaker_carousel').jcarousel();
-	jQuery('#sponsor_carousel').jcarousel();
+    jQuery('#schedule_carousel').jcarousel({
+		scroll: 1
+	});
+	jQuery('#speaker_carousel').jcarousel({
+		wrap: 'circular',
+		scroll: 1
+	});
+	jQuery('#sponsor_carousel').jcarousel({
+		scroll: 1
+	});
 });
 </script>
 	</head>
@@ -108,10 +115,10 @@ Features include:</p>
 </section>
 <section id="sponsors" class="leftcol-wide jcarousel-skin-sponsor">
 <ul id="sponsor_carousel" class="jcarousel-skin-sponsor">
+   <li><img src="img/logo_bendyworks.png"><p>Bendyworks</p></li>
    <li><img src="img/unknown.jpg"><p>Your company here:<br /><a href="mailto:contact@snow-mobile.org">contact at snow-mobile.org</a></p></li>
-   <li></li>
-   <li></li>
-   <li></li>
+   <li><img src="img/unknown.jpg"><p>Your company here:<br /><a href="mailto:contact@snow-mobile.org">contact at snow-mobile.org</a></p></li>
+   <li><img src="img/unknown.jpg"><p>Your company here:<br /><a href="mailto:contact@snow-mobile.org">contact at snow-mobile.org</a></p></li>
 </ul>
 <a href="sponsors.html" class="yellow-link-lower-right">More Sponsors >></a>
 </section>

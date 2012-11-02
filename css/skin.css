@@ -50,6 +50,11 @@
 	font-size: 1.2em;
 }
 
+.jcarousel-skin-sponsor .jcarousel-item  img{
+	max-width: 200px;
+	max-height: 150px;
+}
+
 .jcarousel-skin-speaker .jcarousel-item {
     width: 75px;
     height: 150px;
