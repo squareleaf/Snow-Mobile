@@ -6,10 +6,6 @@
     background: #58585a url(../img/sponsor_header.jpg) no-repeat top right;	
 }
 
-.jcarousel-skin-speaker .jcarousel-container {
-	/* height: 160px; */
-}
-
 .jcarousel-skin-tango .jcarousel-direction-rtl, .jcarousel-skin-speaker .jcarousel-direction-rtl, .jcarousel-skin-sponsor  .jcarousel-direction-rtl  {
 	direction: rtl;
 }
@@ -19,13 +15,14 @@
     padding: 20px 40px;
 }
 
-.jcarousel-skin-speaker .jcarousel-container-horizontal {
-    /* width: 85%; */
-	height: 160px;
+.jcarousel-skin-tango .jcarousel-clip , .jcarousel-skin-speaker .jcarousel-clip {
+    overflow: hidden;
 }
 
-.jcarousel-skin-tango .jcarousel-clip , .jcarousel-skin-speaker .jcarousel-clip, .jcarousel-skin-sponsor .jcarousel-clip{
+.jcarousel-skin-sponsor .jcarousel-clip {
     overflow: hidden;
+	width: 80px;
+	height: 160px;
 }
 
 .jcarousel-skin-tango .jcarousel-clip-horizontal , .jcarousel-skin-sponsor .jcarousel-clip-horizontal{
@@ -34,13 +31,8 @@
 }
 
 .jcarousel-skin-speaker .jcarousel-clip-horizontal {
-    /* width:  85%; */
+    width:  580px !important; 
     height: 160px;
-}
-
-.jcarousel-skin-speaker, .jcarousel-list-horizontal {
-	width: 630px !important;
-	padding-left: 150px;
 }
 
 .jcarousel-skin-tango .jcarousel-item, .jcarousel-skin-sponsor .jcarousel-item{
@@ -60,6 +52,7 @@
     height: 150px;
 	padding: 0 10px 10px 10px;
 	font-size: .8em;
+	display: inline;
 }
 
 .jcarousel-skin-tango .jcarousel-item-horizontal, .jcarousel-skin-sponsor .jcarousel-item-horizontal {
@@ -67,12 +60,17 @@
     margin-right: 10px;
 }
 
-.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal , .jcarousel-skin-sponsor .jcarousel-direction-rtl .jcarousel-item-horizontal{
+.jcarousel-skin-speaker .jcarousel-item-horizontal { 
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal , .jcarousel-skin-sponsor .jcarousel-direction-rtl .jcarousel-item-horizontal, .jcarousel-skin-speaker .jcarousel-direction-rtl .jcarousel-item-horizontal{  
 	margin-left: 10px;
     margin-right: 0;
 }
 
-.jcarousel-skin-tango .jcarousel-item-placeholder, .jcarousel-skin-sponsor .jcarousel-item-placeholder{
+.jcarousel-skin-tango .jcarousel-item-placeholder, .jcarousel-skin-sponsor .jcarousel-item-placeholder, .jcarousel-skin-speaker .jcarousel-item-placeholder{ /* added speaker here - no effect */
     background: #fff;
     color: #000;
 }
@@ -93,14 +91,14 @@
 .jcarousel-skin-speaker .jcarousel-next-horizontal {
     position: absolute;
     top: 60px;
-    right: 15px;
+    right: 8px;
     width: 40px;
     height: 32px;
     cursor: pointer;
     background: transparent url(../img/next-horizontal.png) no-repeat 0 0;
 }
 
-.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal, .jcarousel-skin-sponsor .jcarousel-direction-rtl .jcarousel-next-horizontal {
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal, .jcarousel-skin-sponsor .jcarousel-direction-rtl .jcarousel-next-horizontal, .jcarousel-skin-speaker .jcarousel-direction-rtl .jcarousel-next-horizontal{  
     left: 5px;
     right: auto;
     background-image: url(..img/prev-horizontal.png);
@@ -126,16 +124,30 @@
     background: transparent url(../img/prev-horizontal.png) no-repeat 0 0;
 }
 
-.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal, .jcarousel-skin-speaker .jcarousel-direction-rtl .jcarousel-prev-horizontal, .jcarousel-skin-sponsor.jcarousel-direction-rtl .jcarousel-prev-horizontal{
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal, .jcarousel-skin-speaker .jcarousel-direction-rtl .jcarousel-prev-horizontal, .jcarousel-skin-sponsor .jcarousel-direction-rtl .jcarousel-prev-horizontal{
     left: auto;
     right: 5px;
     background-image: url(../img/next-horizontal.png);
 }
 
+@media only screen and (min-width: 420px) {
+	.jcarousel-skin-speaker {
+		padding-left: 160px;
+	}
+}
+
 @media only screen and (max-width: 420px) {
-	.jcarousel-skin-speaker, .jcarousel-list-horizontal {
-	width: 260px !important;
-	padding-left: 60px;
+	.jcarousel-skin-speaker .jcarousel-clip-horizontal {
+		width: 280px !important;
+		padding-left: 50px;
+	}
+	
+	.jcarousel-skin-speaker .jcarousel-prev-horizontal {
+		left: 0px;
+	}
+	
+	.jcarousel-skin-speaker .jcarousel-list-horizontal {
+
 	}
 }
 
